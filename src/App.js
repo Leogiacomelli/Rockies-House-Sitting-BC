@@ -1,18 +1,19 @@
-import CartWidget from "./Components/CartWidget/CartWidget.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
-import ProductCard from "./Components/ProductCard/ProductCard.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Shop } from "./pages/shop/shop";
+import { Cart } from "./pages/cart/cart";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <ItemListContainer />
-
-      <ProductCard title={"Producto uno"} price={200} isRed={true} />
-      <ProductCard title={"Producto dos"} price={1500} isRed={true} />
-      <ProductCard title={"Producto tres"} isRed={false} />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
 
       <Footer />
     </div>
