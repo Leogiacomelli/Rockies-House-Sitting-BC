@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: 1,
+    title: "House Sitting Short Term",
+    price: 150,
+    stock: 3,
+    description: "Estas son las mejores zapatillas",
+    category: "house",
+    img: "https://images.mansionglobal.com/im-581474?width=1280&size=1",
+  },
+  {
+    id: 2,
+    title: "House Sitting Long Term",
+    price: 200,
+    stock: 15,
+    description: "Ultra livianas y cuentan con camara de aire",
+    category: "house",
+    img: "https://img.jamesedition.com/listing_images/2022/04/08/15/40/38/a9a04827-3b87-4ee9-8719-1a046465ba11/je/1000x620xc.jpg",
+  },
+  {
+    id: 3,
+    title: "Silver Plan",
+    price: 100,
+    stock: 3,
+    description: "1-3 days Meet our Silver Plan!",
+    category: "dog",
+    img: "https://www.petful.com/wp-content/uploads/2014/08/Bernese-Mountain-Dog-750x398.jpg",
+  },
+  {
+    id: 4,
+    title: "Golden Plan",
+    price: 150,
+    stock: 15,
+    description: "3+ Leave your dog with us and enjoy your vacations!",
+    category: "dog",
+    img: "https://assets.orvis.com/is/image/orvisprd/AdobeStock_101064662?wid=1023&src=is($object$:7-3)",
+  },
+];
